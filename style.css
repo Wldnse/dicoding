@@ -30,7 +30,7 @@
   text-decoration: none;
   font-family: "Frank Ruhl Libre", serif;
   color: #d65d40;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border-bottom: 1px solid #555;
   transition: 0.3s;
   font-size: 1rem;
@@ -302,17 +302,20 @@ svg text {
 @media screen and (max-width: 768px) {
   /* NAVBAR */
   .hamburger-menu {
-    display: block;
+    display: inline-block;
     margin: 1rem;
-
     width: 2rem;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .vertical-navbar {
     width: 100%;
     height: auto;
     position: relative;
-    display: none;
+    display: block;
   }
 
   .vertical-navbar ul {
@@ -330,9 +333,7 @@ svg text {
   }
 
   .foto_profil {
-    margin: 1rem auto;
-    display: inline-block;
-    margin-left: 9rem;
+    display: none;
   }
 
   .foto_profil p {
@@ -470,5 +471,15 @@ svg text {
   .social-link {
     padding: 12px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  svg {
+    width: 80%;
+  }
+
+  svg text {
+    font-size: 110px;
   }
 }
