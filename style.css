@@ -298,8 +298,7 @@ svg text {
 
 /* END FOOTER */
 
-/* Media Query untuk perangkat dengan lebar maksimum 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   /* NAVBAR */
   .hamburger-menu {
     display: inline-block;
@@ -356,18 +355,7 @@ svg text {
   }
 
   .wrapper {
-    padding-left: 2rem;
-    display: flex;
-    justify-content: center;
-    margin-top: -2rem;
-  }
-
-  svg {
-    width: 80%;
-  }
-
-  svg text {
-    font-size: 40px;
+    display: none;
   }
 
   .profil p {
@@ -474,7 +462,7 @@ svg text {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1250px) {
   svg {
     width: 80%;
   }
